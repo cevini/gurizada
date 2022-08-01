@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('http://fonts.cdnfonts.com/css/rubik-one');
+*{
+  border: none;
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: .3s;
+  font-family: 'Quicksand', sans-serif /*fonte do Website*/
+}
+:root{
+  --quicksand: 'Quicksand', sans-serif;
+  --rubik: 'Rubik One', sans-serif;
+}
+.container{
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+}
+header{
+  position: fixed;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+}
+.nav a{
+  margin: 0 20px;
+  color: white;
+  padding: 5px;
+  border-radius: 10px 0
+}
+.nav a:hover{
+  color: black;
+  background: white
+}
+body{
+  background: #0d0d0d
+}
+.links{
+  background: white;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+.list{
+  position: fixed;
+  transform: scaleY(0);
+  transform-origin: top;
+  right: 44.5%
+}
+.newlist{
+  transform: scaleY(1);
+}
+@media (max-width: 1115px){
+  .list{
+    right: 43%
+  }
+}
+@media (max-width: 940px){
+  .list{
+    right: 41.5%
+  }
+}
+@media (max-width: 780px){
+  .list{
+    right: 38
+    .5%
+  }
+}
+@media (max-width: 630px){
+  .list button{
+    font-size: 10px;
+  }
+  .list{
+    right: 39%
+  }
+}
+@media (max-width: 480px){
+  .list{
+    right: 35%
+  }
+}
+  /*Home*/
+.home{
+  min-height: 100vh;
+  background: url("https://i.imgur.com/k2vr71D.png") no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.home-content{
+  display: grid;
+  grid-template-columns: auto 500px;
+}
+.home-text{
+  display: flex;
+  height: 100vh;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 50px
+}
+.home-text h1{
+  font-family: var(--rubik);
+  font-size: 4rem;
+  font-weight: 100;
+  text-align: center;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+.home-text h4{
+  text-transform: uppercase;
+  line-height: 2rem
+}
+.home-text p{
+  line-height: 1rem
+}
+.home-text p a{
+  color: orange
+}
+.home-text .btn{
+  margin-top: 4rem
+}
+.btn{
+  background: white;
+  color: black;
+  padding: 0.5rem 3rem;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 5px solid transparent
+}
+.btn:hover{
+  background: transparent;
+  border: 5px solid white;
+  color: white
+}
+@media (max-width:884px){
+  .home{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/k2vr71D.png") no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+  .home-content{
+    grid-template-columns: auto
+  }
+  .home-text .btn{
+    margin-top: 2rem
+  }
+}
+@media (max-width:630px){
+  .nav a, p{
+    font-size: 10px
+  }
+  .home-text h1{
+    font-size: 46px;
+    line-height: 2.5rem
+  }
+  .btn{
+    padding: 0.3rem 2rem;
+    font-size: 1rem
+  }
+}
+@media (max-width:410px){
+  .nav a{
+    margin: 0 10px
+  }
+}
+
+  /*Regras*/
+.header-regras{
+  background: #2c2c2c
+}
+.regras{
+  color: white;
+  padding-top: 50px;
+  text-align: justify;
+}
+.regras-content{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem
+}
+.regras h3{
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #2c2c2c, transparent);
+  padding: 5px 10px;
+  border-radius: 7px 0 0 7px
+}
+.regras h4{
+  font-weight: bold;
+  line-height: 20px
+}
+.regras-content p{
+  font-weight: 100;
+  margin-bottom: 1rem
+}
+.regras-final p{
+  text-align: center;
+  margin: 1rem 0
+}
+@media (max-width:1000px){
+  .container{
+    max-width: 800px;
+    padding: 0 20px
+  }
+}
+@media (max-width:630px){
+  .regras h3{
+    font-size: 1rem
+  }
+  .regras h4{
+    font-size: 12px
+  }
+  .regras-content{
+    gap: 1rem
+  }
+}
+@media (max-width:500px){
+  .regras-content{
+    grid-template-columns: auto;
+  }
+  .regras .deveres{
+    margin:0.5rem 0 1rem
+  }
+}
+
+/*Membros*/
+.membros-content{
+
+}
