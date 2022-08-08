@@ -230,7 +230,67 @@ body{
   }
 }
 
-/*Membros*/
-.membros-content{
-
+/*Manuais*/
+.manuais{
+  padding-top: 75px;
+  background: linear-gradient(white,#dfdfdf);
+  min-height: 100vh
+}
+.manuais-discord .btn{
+  background: blue;
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  color: white;
+  margin: 0 auto 1.5rem
+}
+.manuais-discord .btn:hover{
+  background: transparent;
+  color: blue;
+  border: 5px solid blue
+}
+.manuais-item h4{
+  background: linear-gradient(to right,var(--cinza),transparent);
+  padding: 0.5rem; color: white; border-radius: 5px; margin-bottom: 1rem
+}
+.manuais-item div{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap:1rem;
+  align-items: center;
+  margin: 1rem 0;
+  background: #2f3136;
+  color: white;
+  border-radius: 10px;
+  justify-content: space-evenly
+}
+.manuais-item div p{
+  margin: 1rem;
+  max-width: 24rem;
+  text-align: justify;
+}
+.manuais-item div img{
+  border-radius: 10px;
+  padding: 0.5rem
+}
+@media (max-width:630px){
+  .manuais-item div{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0;
+    align-items: center;
+    margin: 1rem 0;
+    justify-content: center;
+    justify-items: center
+  }
+  .manuais-item div img{
+    max-width: 20rem;
+    max-height: 16rem;
+    object-fit: scale-down;
+    width: 100%
+  }
+  .manuais-discord .btn{
+    width: 100%;
+    font-size: 11px
+  }
 }
