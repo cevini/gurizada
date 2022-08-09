@@ -12,6 +12,8 @@
 :root{
   --quicksand: 'Quicksand', sans-serif;
   --rubik: 'Rubik One', sans-serif;
+  --azul: rgba(88, 101, 242, 1);
+  --cinza: #2c2c2c
 }
 .container{
   max-width: 960px;
