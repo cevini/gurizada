@@ -1,298 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap');
-@import url(https://fonts.googleapis.com/css?family=Rubik+One);
-*{
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap");
+* {
   border: none;
-  padding: 0; margin: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  transition: .3s;
-  font-family: 'Quicksand', sans-serif /*fonte do Website*/
+  transition: 0.3s;
+  outline: none;
+  font-family: "Raleway", sans-serif;
 }
-:root{
-  --quicksand: 'Quicksand', sans-serif;
-  --rubik: 'Rubik One', sans-serif;
-  --azul: rgba(88, 101, 242, 1);
-  --cinza: #2c2c2c
+:root {
+  --branco: #fff1cf;
+  --preto: #030506;
+  --vermelho: #64130c;
+  --caramelo: #924f1b;
+  --cinza: #837d72;
 }
-.container{
-  max-width: 960px;
+body {
+  background: var(--preto);
+}
+.container {
+  max-width: 1160px;
   width: 100%;
   margin: auto;
+  padding: 0 5%;
 }
-header{
-  position: fixed;
-  padding: 15px 0;
-  width: 100%;
+.heading {
+  font-size: 2rem;
+  text-transform: uppercase;
   text-align: center;
+  color: var(--branco);
 }
-.nav a{
-  margin: 0 20px;
-  color: white;
-  padding: 5px;
-  border-radius: 10px 0
-}
-.nav a:hover{
-  color: black;
-  background: white
-}
-body{
-  background: #0d0d0d
-}
-.links{
-  background: white;
-  padding: 5px;
-  border: none;
-  outline: none;
-}
-.list{
-  position: fixed;
-  transform: scaleY(0);
-  transform-origin: top;
-  right: 44.5%
-}
-.newlist{
-  transform: scaleY(1);
-}
-@media (max-width: 1115px){
-  .list{
-    right: 43%
-  }
-}
-@media (max-width: 940px){
-  .list{
-    right: 41.5%
-  }
-}
-@media (max-width: 780px){
-  .list{
-    right: 38
-    .5%
-  }
-}
-@media (max-width: 630px){
-  .list button{
-    font-size: 10px;
-  }
-  .list{
-    right: 39%
-  }
-}
-@media (max-width: 480px){
-  .list{
-    right: 35%
-  }
-}
-  /*Home*/
-.home{
-  min-height: 100vh;
-  background: url("https://i.imgur.com/k2vr71D.png") no-repeat;
-  background-position: left;
-  background-size: cover;
-}
-.home-content{
-  display: grid;
-  grid-template-columns: auto 500px;
-}
-.home-text{
-  display: flex;
-  height: 100vh;
-  align-content: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  padding-top: 50px
-}
-.home-text h1{
-  font-family: var(--rubik);
-  font-size: 4rem;
-  font-weight: 100;
-  text-align: center;
-  line-height: 4rem;
-  text-transform: uppercase;
-}
-.home-text h4{
-  text-transform: uppercase;
-  line-height: 2rem
-}
-.home-text p{
-  line-height: 1rem
-}
-.home-text p a{
-  color: orange
-}
-.home-text .btn{
-  margin-top: 4rem
-}
-.btn{
-  background: white;
-  color: black;
-  padding: 0.5rem 3rem;
-  font-size: 20px;
-  border-radius: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 5px solid transparent
-}
-.btn:hover{
-  background: transparent;
-  border: 5px solid white;
-  color: white
-}
-@media (max-width:884px){
-  .home{
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/k2vr71D.png") no-repeat;
-    background-position: left;
-    background-size: cover;
-  }
-  .home-content{
-    grid-template-columns: auto
-  }
-  .home-text .btn{
-    margin-top: 2rem
-  }
-}
-@media (max-width:630px){
-  .nav a, p{
-    font-size: 10px
-  }
-  .home-text h1{
-    font-size: 46px;
-    line-height: 2.5rem
-  }
-  .btn{
-    padding: 0.3rem 2rem;
-    font-size: 1rem
-  }
-}
-@media (max-width:410px){
-  .nav a{
-    margin: 0 10px
-  }
-}
-
-  /*Regras*/
-.header-regras{
-  background: #2c2c2c
-}
-.regras{
-  color: white;
-  padding-top: 50px;
-  text-align: justify;
-}
-.regras-content{
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 2rem
-}
-.regras h3{
-  font-weight: bold;
-  margin: 2rem 0 1rem;
+.btn {
+  color: var(--branco);
   font-size: 1.5rem;
-  background: linear-gradient(to right, #2c2c2c, transparent);
-  padding: 5px 10px;
-  border-radius: 7px 0 0 7px
 }
-.regras h4{
-  font-weight: bold;
-  line-height: 20px
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--branco);
+  min-height: 100vh;
 }
-.regras-content p{
-  font-weight: 100;
-  margin-bottom: 1rem
+.home-content .gif {
+  border-radius: 40% 60%;
+  overflow: hidden;
+  width: 3.9in;
+  height: 500px;
 }
-.regras-final p{
+.home-content .gif video {
+  height: 500px;
+}
+.home-content .title {
   text-align: center;
-  margin: 1rem 0
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-@media (max-width:1000px){
-  .container{
-    max-width: 800px;
-    padding: 0 20px
-  }
+.home-content .title .title-main {
+  position: relative;
 }
-@media (max-width:630px){
-  .regras h3{
-    font-size: 1rem
-  }
-  .regras h4{
-    font-size: 12px
-  }
-  .regras-content{
-    gap: 1rem
-  }
+.home-content .title .title-main h1 {
+  font-size: 5rem;
 }
-@media (max-width:500px){
-  .regras-content{
-    grid-template-columns: auto;
-  }
-  .regras .deveres{
-    margin:0.5rem 0 1rem
-  }
+.home-content .title .title-main p {
+  position: absolute;
+  bottom: -5px;
+  right: 0rem;
+  font-size: 17px;
+  word-spacing: 2px;
 }
-
-/*Manuais*/
-.manuais{
-  padding-top: 75px;
-  background: linear-gradient(white,#dfdfdf);
-  min-height: 100vh
-}
-.manuais-discord .btn{
-  background: blue;
+.home-content .title .title-social .redes {
   display: flex;
   justify-content: center;
-  width: 30rem;
-  color: white;
-  margin: 0 auto 1.5rem
+  padding: 1rem 0;
+  gap: 1rem;
 }
-.manuais-discord .btn:hover{
-  background: transparent;
-  color: blue;
-  border: 5px solid blue
+.home-content .title .title-social .redes .btn {
+  padding: 1rem;
 }
-.manuais-item h4{
-  background: linear-gradient(to right,var(--cinza),transparent);
-  padding: 0.5rem; color: white; border-radius: 5px; margin-bottom: 1rem
+
+/* Área de Fãs */
+
+.fas-content {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.manuais-item div{
-  display: grid;
-  grid-template-columns: repeat(2,auto);
-  gap:1rem;
+.fas-list {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 1rem 0;
-  background: #2f3136;
-  color: white;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.fas-list .item {
+  flex: 1 1 300px;
+  min-height: 320px;
+  background: var(--caramelo);
   border-radius: 10px;
-  justify-content: space-evenly
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
 }
-.manuais-item div p{
-  margin: 1rem;
-  max-width: 24rem;
-  text-align: justify;
+.fas-list .item h2 {
+  color: var(--branco);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
-.manuais-item div img{
-  border-radius: 10px;
-  padding: 0.5rem
+.fas-list .item p {
+  color: var(--branco);
+  background: var(--vermelho);
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
 }
-@media (max-width:630px){
-  .manuais-item div{
-    display: grid;
-    grid-template-columns: auto;
-    gap: 0;
-    align-items: center;
-    margin: 1rem 0;
+.fas-list .item .btn {
+  background: var(--branco);
+  color: var(--vermelho);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+.fas-list .item:last-child {
+  justify-content: center;
+  align-items: center;
+}
+.bg-gif {
+  display: none;
+  position: absolute;
+}
+@media (max-width: 890px) {
+  .home-content {
+    position: relative;
     justify-content: center;
-    justify-items: center
+    box-shadow: var(--preto) 0px -50px 2rem -28px inset;
+    margin-bottom: 5rem;
   }
-  .manuais-item div img{
-    max-width: 20rem;
-    max-height: 16rem;
-    object-fit: scale-down;
-    width: 100%
+  .home-content .gif {
+    display: none;
   }
-  .manuais-discord .btn{
+  .bg-gif {
+    display: block;
     width: 100%;
-    font-size: 11px
+    height: 100vh;
+  }
+  .bg-gif video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (max-width: 630px) {
+  .home-content .title .title-main h1 {
+    font-size: 12vw;
+  }
+  .home-content .title .title-main p {
+    font-size: 2.3vw;
+  }
+  p {
+    font-size: 14px;
+  }
+  .heading {
+    font-size: 1.5rem;
   }
 }
