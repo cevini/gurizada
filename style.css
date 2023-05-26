@@ -189,7 +189,6 @@ table th {
   background: linear-gradient(145deg, #ffffdd, #e6d9ba);
   color: var(--vermelho);
   width: 100%;
-  padding: 1rem;
   border-radius: 5px;
   text-align: center;
   flex: 1;
@@ -199,6 +198,42 @@ table th {
   gap: 10px;
   box-shadow: 5px 5px 14px #693913, -5px -5px 14px #bb6523;
 }
+.fas-list .grupos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30px auto auto;
+  justify-items: center;
+  align-items: stretch;
+}
+.fas-list .grupos h2 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.fas-list .grupos p {
+  grid-area: 2 / 1 / 3 / 4;
+}
+.fas-list .grupos .btn {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.fas-list .grupos .btn1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.fas-list .grupos .btn2 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.fas-list .grupos .btn3 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.fas-list .grupos .btn3 i {
+  background: var(--vermelho);
+  color: var(--branco);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  font-size: 27px;
+  padding-top: 2px;
+}
+
 .fas-list .item:last-child {
   justify-content: center;
   align-items: center;
